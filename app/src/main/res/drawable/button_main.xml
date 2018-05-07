@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/button_pressed"
+        android:state_pressed="true"
+        android:top="12dp"
+        android:bottom="12dp"/>
+    <item android:drawable="@drawable/button_focused"
+        android:state_focused="true"
+        android:top="12dp"
+        android:bottom="12dp"/>
+    <item android:drawable="@drawable/button_default"
+        android:top="12dp"
+        android:bottom="12dp"/>
+</selector>

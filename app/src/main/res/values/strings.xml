@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Apples2Lemons</string>
+    <string name="item_1"><b>Item 1:</b></string>
 </resources>

@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">Apples2Lemons</string>
     <string name="item_1"><b>Item 1:</b></string>
+
+    <string-array name="units_array">
+        <item>pounds</item>
+        <item>ounces</item>
+        <item>grams</item>
+        <item>milligrams</item>
+        <item>litre</item>
+        <item>millilitre</item>
+    </string-array>
+
 </resources>

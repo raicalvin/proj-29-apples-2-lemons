@@ -19,6 +19,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    public void addAdditionalItemLayout(View v) {
+
+    }
+
     /*
 
     public void calculateUnitCosts(View view) {

@@ -15,7 +15,14 @@
         <item name="android:gravity">center</item>
         <item name="android:fontFamily">@font/oxygen_light</item>
         <item name="android:textSize">18sp</item>
-        <item name="android:textColor">#E3006E</item>
+        <item name="android:textColor">#56CFED</item>
+    </style>
+
+
+    <style name="CustomTextViewLabels" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#3A4C50</item>
+        <item name="android:fontFamily">@font/oxygen_light</item>
+        <item name="android:gravity">center</item>
     </style>
 
 </resources>

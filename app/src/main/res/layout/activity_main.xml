@@ -4,202 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#56cfee"
+    android:background="#56CFED"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="3"
-        android:orientation="vertical">
+        android:layout_height="72dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="16dp"
+        android:src="@drawable/apples_2_lemons_logo" />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="7"
-            android:contentDescription="Apples2Lemons App Logo"
-            android:paddingTop="16dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/app_logo" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:fontFamily="@font/montserrat_alternates_regular"
-            android:gravity="center_horizontal"
-            android:includeFontPadding="false"
-            android:text="Apples2Lemon"
-            android:textColor="#000000"
-            android:textSize="32sp" />
-
-    </LinearLayout>
-
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Pick your unit:" />
-
-        <Spinner
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"></Spinner>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_margin="8dp"
-        android:layout_weight="6"
-        android:background="@drawable/card_background_main"
-        android:orientation="horizontal"
-        android:padding="16dp">
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
 
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginRight="8dp"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            android:id="@+id/linear_layout_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:padding="16dp">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:text="@string/item_1"
-                android:textColor="#3A4C50"
-                android:textSize="24sp" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_main"
+                android:text="Clear"
+                android:layout_marginRight="8dp"/>
 
-            <EditText
-                android:id="@+id/edtxt_item1_price"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="$34.22"
-                android:maxLines="1"
-                android:textColor="#56CFED"
-                android:textSize="20sp" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_main"
+                android:text="Calculate"
+                android:layout_marginRight="8dp"/>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:paddingLeft="4dp"
-                android:text="price"
-                android:textColor="#3A4C50"
-                android:textSize="12sp" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_main"
+                android:text="Add"
+                android:layout_marginRight="8dp"/>
 
-            <EditText
-                android:id="@+id/edtxt_item1_quantity"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="5"
-                android:textColor="#56CFED"
-                android:textSize="20sp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingLeft="4dp"
-                android:text="quantity"
-                android:textColor="#3A4C50"
-                android:textSize="12sp" />
-
-            <TextView
-                android:id="@+id/txtview_item1_result"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:text="$0.32 / lb"
-                android:textColor="#56CFED"
-                android:textSize="24sp" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_main"
+                android:text="Delete" />
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="8dp"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:text="Item 1:"
-                android:textSize="24sp" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="$34.22"
-                android:textSize="20sp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="price"
-                android:textSize="12sp" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="5"
-                android:textSize="20sp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="quantity"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:text="$0.32 / lb"
-                android:textSize="24sp" />
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2"
-        android:gravity="right"
-        android:orientation="horizontal"
-        android:paddingRight="8dp">
-
-        <Button
-            android:id="@+id/btn_calculate"
-            android:layout_width="wrap_content"
-            android:layout_height="36dp"
-            android:layout_marginRight="8dp"
-            android:background="@drawable/button_main"
-            android:onClick="calculateUnitCosts"
-            android:text="Calculate"
-            android:textColor="#3A4C50" />
-
-        <Button
-            android:id="@+id/btn_clear"
-            android:layout_width="wrap_content"
-            android:layout_height="36dp"
-            android:background="@drawable/button_main"
-            android:text="Clear"
-            android:textColor="#3A4C50" />
-
-
-    </LinearLayout>
+    </RelativeLayout>
 
 
 </LinearLayout>

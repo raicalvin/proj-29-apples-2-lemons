@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    /*
+
     public void calculateUnitCosts(View view) {
 
         // Connect the Views to the Java code:
@@ -45,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
         String formattedResult = "$" + String.format("%.2f", numToFormat);
         return formattedResult;
     }
+
+    */
 
 
 

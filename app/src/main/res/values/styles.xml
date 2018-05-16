@@ -6,6 +6,16 @@
         <item name="colorPrimary">#56CFED</item>
         <item name="colorPrimaryDark">#3A4C50</item>
         <item name="colorAccent">#FFFFFF</item>
+        <!--Add in the following line so that the Theme can find the custom style you created, EditTextCustomTheme, below-->
+        <item name="android:editTextStyle">@style/EditTextCustomStyle</item>
+    </style>
+
+    <!--Custom EditText style for all EditText views in layout-->
+    <style name="EditTextCustomStyle" parent="Base.V7.Widget.AppCompat.EditText">
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/oxygen_light</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#E3006E</item>
     </style>
 
 </resources>

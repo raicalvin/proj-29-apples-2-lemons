@@ -2,8 +2,11 @@ package com.a29moon.apples2lemons;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.TypedValue;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -20,7 +23,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void addAdditionalItemLayout(View v) {
+        LinearLayout mainItem = findViewById(R.id.main_linear_layout);
+        View child = getLayoutInflater().inflate(R.layout.item_card_layout_default, null, false);
+        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
 
+        // The margins need to be converted into DIPs:
+        int marginInDp = (int) TypedValue.applyDimension(
+                TypedValue.COMPLEX_UNIT_DIP, 16, getResources()
+                        .getDisplayMetrics());
+
+        layoutParams.setMargins(marginInDp, marginInDp, marginInDp, 0);
+        child.setLayoutParams(layoutParams);
+        mainItem.addView(child);
     }
 
     /*
